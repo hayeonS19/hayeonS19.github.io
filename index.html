@@ -2,158 +2,322 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="keywords" content="Cosmo Modify BOT, Discord Bot, TripleS" />
-  <meta name="description" content="Cosmo Modify BOT for enhancing the convenience and accessibility of Cosmo/TripleS Discord users." />
-  <meta name="author" content="Cosmo Team" />
-  <link rel="shortcut icon" href="images/favicon.png" type="">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="keywords" content="Cosmo Modify BOT, Discord Bot, TripleS" />
+    <meta name="description"
+        content="Cosmo Modify BOT for enhancing the convenience and accessibility of Cosmo/TripleS Discord users." />
+    <meta name="author" content="Cosmo Team" />
+    <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title>Nebula</title>
+    <title>Nebula</title>
 
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
-  <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: white;
+            color: black;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header_section .navbar-brand img {
+            height: 40px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .header_section .navbar-brand span {
+            font-size: 24px;
+            vertical-align: middle;
+            color: white;
+        }
+
+        .footer_section {
+            background-color: #071a35;
+            padding: 20px 0;
+            color: white;
+            text-align: right;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer_section img {
+            height: 40px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .footer_section span {
+            font-size: 20px;
+            vertical-align: middle;
+        }
+
+        .footer_section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .hero_area {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .hero_bg_box {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        .bg_img_box img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .slider_section {
+            position: relative;
+            z-index: 1;
+            height: 100vh;
+        }
+
+        .carousel-inner {
+            height: 100%;
+        }
+
+        .carousel-item {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .detail-box {
+            color: white;
+            max-width: 50%;
+            padding-right: 20px;
+            flex: 1;
+        }
+
+        .img-box {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .img-box img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .service_section {
+            background-color: white;
+            color: black;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .service_section .box {
+            border: none;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+        }
+
+        .service_section .box h5 {
+            margin-top: 0;
+            color: black;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .service_section .box p {
+            color: black;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .btn-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn1 {
+            background-color: #071a35;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    </style>
 </head>
 
 <body>
 
-  <div class="hero_area">
-    <div class="hero_bg_box">
-      <div class="bg_img_box">
-        <img src="images/hero-bg.png" alt="">
-      </div>
-    </div>
+    <div class="hero_area">
+        <div class="hero_bg_box">
+            <div class="bg_img_box">
+                <img src="images/hero-bg.png" alt="Hero Background">
+            </div>
+        </div>
 
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="index.html">
-            <span>Nebula</span>
-          </a>
-          <button class="navbar-toggler" type="button" onclick="toggleMenu()">
-            <span class="">&#9776;</span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://discord.gg/S2PQHSvkTw" target="_blank">SUPPORT SERVER</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-
-    <section class="slider_section">
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <h1>Nebula</h1>
-                    <p>Enhancing the convenience and accessibility of Cosmo/Discord users.</p>
-                    <div class="btn-box">
-                      <a href="https://discord.com/oauth2/authorize?client_id=1245754129092186123" class="btn1" target="_blank">TRY NEBULA</a>
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/icon.png" alt="Nebula Logo">
+                        <span>Nebula</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" onclick="toggleMenu()">
+                        <span class="">&#9776;</span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://discord.gg/S2PQHSvkTw" target="_blank">SUPPORT SERVER</a>
+                            </li>
+                        </ul>
                     </div>
-                  </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="slider_section">
+            <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="detail-box">
+                                    <h1>Nebula</h1>
+                                    <p>Enhancing the convenience and accessibility of Cosmo/Discord users.</p>
+                                    <div class="btn-box">
+                                        <a href="https://discord.com/oauth2/authorize?client_id=1245754129092186123"
+                                            class="btn1" target="_blank">TRY NEBULA</a>
+                                    </div>
+                                </div>
+                                <div class="img-box">
+                                    <img src="images/slider-img.png" alt="Slider Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more carousel items if needed -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="service_section layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>Features</h2>
+                <p>Discover the amazing features of Nebula!</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="detail-box">
+                            <h5>Trade History</h5>
+                            <p>View recent trades including sender, receiver, and card information.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="detail-box">
+                            <h5>Collect Tab</h5>
+                            <p>Quickly and easily access your collection using the bot on Discord.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="detail-box">
+                            <h5>Profile Customization</h5>
+                            <p>Create and customize your Cosmo profile for Discord.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-box">
+                <a href="about.html" class="btn1">View more!</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about_section layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>About <span>Nebula</span></h2>
+                <p>Learn more about the Nebula and its capabilities.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="img-box">
+                        <img src="images/icon.png" alt="">
+                    </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
-                  </div>
+                    <div class="detail-box">
+                        <h3>What is Nebula?</h3>
+                        <p>Nebula is designed to enhance the convenience and accessibility of Cosmo/Discord users by
+                            providing features such as trade history, collection access, profile customization, and
+                            more.</p>
+                        <a href="https://discord.gg/S2PQHSvkTw" target="_blank">JOIN SUPPORT SERVER</a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <!-- Add more carousel items if needed -->
         </div>
-      </div>
     </section>
-  </div>
 
-  <section class="service_section layout_padding">
-    <div class="service_container">
-      <div class="container">
-        <div class="heading_container heading_center">
-          <h2>Features</h2>
-          <p>Discover the amazing features of Nebula!</p>
+    <footer class="footer_section">
+        <div class="container">
+            <a href="https://discord.gg/S2PQHSvkTw" target="_blank">
+                <img src="images/icon.png" alt="Cosmo Modify BOT Logo">
+                <span>Nebula</span>
+            </a>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="box">
-              <div class="detail-box">
-                <h5>Trade History</h5>
-                <p>View recent trades including sender, receiver, and card information.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <div class="detail-box">
-                <h5>Collect Tab</h5>
-                <p>Quickly and easily access your collection using the bot on Discord.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <div class="detail-box">
-                <h5>Profile Customization</h5>
-                <p>Create and customize your Cosmo profile for Discord.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="btn-box">
-      <a href="about.html" class="btn1">View more!</a>
-    </div>
-  </section>
+    </footer>
 
-  <section class="about_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>About <span>Nebula</span></h2>
-        <p>Learn more about the Nebula and its capabilities.</p>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="img-box">
-            <img src="images/icon.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <h3>What is Nebula?</h3>
-            <p>Nebula is designed to enhance the convenience and accessibility of Cosmo/Discord users by providing features such as trade history, collection access, profile customization, and more.</p>
-            <a href="https://discord.gg/S2PQHSvkTw" target="_blank">Join support server</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    function toggleMenu() {
-      var element = document.getElementById("navbarSupportedContent");
-      element.classList.toggle("collapse");
-    }
-  </script>
-
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navbarSupportedContent");
+            if (menu.classList.contains("collapse")) {
+                menu.classList.remove("collapse");
+            } else {
+                menu.classList.add("collapse");
+            }
+        }
+    </script>
 </body>
 
 </html>
