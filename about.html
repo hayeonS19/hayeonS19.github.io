@@ -32,6 +32,72 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #0a2a50; 
+      color: white; 
+      margin: 0; 
+    }
+
+    .about_section {
+      background-color: #0a2a50; 
+    }
+
+    .info_section {
+      background-color: #0a2a50; 
+    }
+
+    .header_section {
+      background-color: #071a35; 
+      padding: 10px 0;
+      width: 100%;
+    }
+
+    .header_section .navbar-brand img {
+      height: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .header_section .navbar-brand span {
+      font-size: 24px;
+      vertical-align: middle;
+      color: white;
+    }
+
+    .footer_section {
+      background-color: #071a35; 
+      padding: 20px 0;
+      color: white;
+      text-align: right;
+      position: sticky;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer_section img {
+      height: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .footer_section span {
+      font-size: 20px;
+      vertical-align: middle;
+    }
+
+    .footer_section a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .content {
+      flex: 1;
+    }
+  </style>
 </head>
 
 <body class="sub_page">
@@ -49,6 +115,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
+            <img src="images/icon.png" alt="Nebula Logo">
             <span>Nebula</span>
           </a>
           <button class="navbar-toggler" type="button" onclick="toggleMenu()">
@@ -75,7 +142,7 @@
 
   <!-- about section -->
 
-  <section class="about_section layout_padding">
+  <section class="about_section layout_padding content">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
@@ -125,7 +192,7 @@
 
   <!-- info section -->
 
-  <section class="info_section layout_padding2">
+  <section class="info_section layout_padding2 content">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-3 info_col">
@@ -143,7 +210,7 @@
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  ssscosmotest@gmail.com
+                  cs@objektify.xyz
                 </span>
               </a>
             </div>
@@ -152,6 +219,17 @@
       </div>
     </div>
   </section>
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <a href="index.html">
+        <img src="images/icon.png" alt="Nebula Logo">
+        <span>Nebula</span>
+      </a>
+    </div>
+  </section>
+  <!-- end footer section -->
 
   <script>
     function toggleMenu() {
