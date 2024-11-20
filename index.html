@@ -78,17 +78,18 @@
             position: relative;
             overflow: hidden;
             width: 100%;
+            min-height: 100vh;
         }
 
         .hero_bg_box {
             position: relative;
             width: 100%;
-            height: auto;
+            height: 100%;
         }
 
         .bg_img_box img {
             width: 100%;
-            height: auto;
+            height: 100%;
             object-fit: cover;
             position: absolute;
             top: 0;
@@ -97,37 +98,85 @@
         }
 
         .slider_section {
-            position: relative;
-            z-index: 1;
-            height: 100vh;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            text-align: center;
+        }
+
+        .slider_section .row {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .slider_section .row {
+                flex-direction: row; 
+                text-align: left; 
+            }
+        }
+
+
+        .img-box {
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            margin-bottom: 20px; 
+        }
+
+        .img-box img {
+            max-width: 80%; 
+            height: auto;
+        }
+
+
+        .detail-box {
+            max-width: 600px;
+            margin-left: 20px; 
+        }
+
+        .detail-box h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .detail-box p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .detail-box .btn-box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .detail-box .btn1 {
+            background-color: #071a35;
+            border: none;
+            padding: 10px 30px;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .detail-box .btn1:hover {
+            background-color: #0a294a;
         }
 
         .carousel-inner {
-            height: 100%;
+            width: 100%;
         }
 
         .carousel-item {
             display: flex;
             align-items: center;
-            height: 100%;
-        }
-
-        .detail-box {
-            color: white;
-            max-width: 50%;
-            padding-right: 20px;
-            flex: 1;
-        }
-
-        .img-box {
-            flex: 1;
-            display: flex;
             justify-content: center;
-        }
-
-        .img-box img {
-            max-width: 100%;
-            height: auto;
+            height: 100%;
         }
 
         .service_section {
@@ -211,26 +260,19 @@
         </header>
 
         <section class="slider_section">
-            <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="container">
-                            <div class="row">
-                                <div class="detail-box">
-                                    <h1>Nebula</h1>
-                                    <p>Enhancing the convenience and accessibility of Cosmo/Discord users.</p>
-                                    <div class="btn-box">
-                                        <a href="https://discord.com/oauth2/authorize?client_id=1245754129092186123"
-                                            class="btn1" target="_blank">TRY NEBULA</a>
-                                    </div>
-                                </div>
-                                <div class="img-box">
-                                    <img src="images/slider-img.png" alt="Slider Image">
-                                </div>
-                            </div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="img-box">
+                        <img src="images/slider-img.png" alt="Slider Image">
+                    </div>
+                    <div class="detail-box">
+                        <h1>Nebula</h1>
+                        <p>Enhancing the convenience and accessibility of Cosmo/Discord users.</p>
+                        <div class="btn-box">
+                            <a href="https://discord.com/oauth2/authorize?client_id=1245754129092186123"
+                                class="btn1" target="_blank">TRY NEBULA</a>
                         </div>
                     </div>
-                    <!-- Add more carousel items if needed -->
                 </div>
             </div>
         </section>
@@ -246,8 +288,8 @@
                 <div class="col-md-4">
                     <div class="box">
                         <div class="detail-box">
-                            <h5>Trade History</h5>
-                            <p>View recent trades including sender, receiver, and card information.</p>
+                            <h5>Stats</h5>
+                            <p>View Seasonal Objekt stats and Como per Month and also your recent vote history!</p>
                         </div>
                     </div>
                 </div>
@@ -262,8 +304,8 @@
                 <div class="col-md-4">
                     <div class="box">
                         <div class="detail-box">
-                            <h5>Profile Customization</h5>
-                            <p>Create and customize your Cosmo profile for Discord.</p>
+                            <h5>Trade History</h5>
+                            <p>View recent trades including sender, receiver, and card information.</p>
                         </div>
                     </div>
                 </div>
@@ -301,7 +343,7 @@
 
     <footer class="footer_section">
         <div class="container">
-            <a href="https://discord.gg/S2PQHSvkTw" target="_blank">
+            <a href="https://discord.com/oauth2/authorize?client_id=1245754129092186123" target="_blank">
                 <img src="images/icon.png" alt="Cosmo Modify BOT Logo">
                 <span>Nebula</span>
             </a>
