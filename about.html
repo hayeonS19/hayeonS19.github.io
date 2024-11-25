@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -13,13 +13,9 @@
   <title>Nebula</title>
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
   <link href="css/font-awesome.min.css" rel="stylesheet" />
-
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
 
@@ -28,21 +24,21 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      background-color: #0a2a50; 
-      color: white; 
-      margin: 0; 
+      background-color: #0a2a50;
+      color: white;
+      margin: 0;
     }
 
     .about_section {
-      background-color: #0a2a50; 
+      background-color: #0a2a50;
     }
 
     .info_section {
-      background-color: #0a2a50; 
+      background-color: #0a2a50;
     }
 
     .header_section {
-      background-color: #071a35; 
+      background-color: #071a35;
       padding: 10px 0;
       width: 100%;
     }
@@ -60,7 +56,7 @@
     }
 
     .footer_section {
-      background-color: #071a35; 
+      background-color: #071a35;
       padding: 20px 0;
       color: white;
       text-align: right;
@@ -88,13 +84,33 @@
     .content {
       flex: 1;
     }
+
+    .language-btn.active {
+      background-color: #f5a623;
+      color: #fff;
+    }
+
+    /* 버튼 스타일 유지 */
+    .language-btn {
+      background-color: #3b4e8e;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .language-btn:hover {
+      background-color: #4b66b1;
+    }
   </style>
 </head>
 
 <body class="sub_page">
 
   <div class="hero_area">
-
     <div class="hero_bg_box">
       <div class="bg_img_box">
         <img src="images/hero-bg.png" alt="">
@@ -106,7 +122,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
             <img src="images/icon.png" alt="Nebula Logo">
-            <span>Nebula</span>
+            <span data-en="Nebula" data-ko="Nebula">Nebula</span>
           </a>
           <button class="navbar-toggler" type="button" onclick="toggleMenu()">
             <span class="">&#9776;</span>
@@ -114,13 +130,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.html" data-en="Home" data-ko="홈">Home</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="about.html" data-en="About" data-ko="소개">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://discord.gg/S2PQHSvkTw" target="_blank">SUPPORT SERVER</a>
+                <a class="nav-link" href="https://discord.gg/S2PQHSvkTw" target="_blank" data-en="SUPPORT SERVER" data-ko="지원 서버">SUPPORT SERVER</a>
               </li>
             </ul>
           </div>
@@ -129,14 +145,13 @@
     </header>
   </div>
 
-
   <section class="about_section layout_padding content">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
-          About <span>Nebula</span>
+        <h2 data-en="About Nebula" data-ko="Nebula에 관하여">
+          About <span data-en="Nebula" data-ko="네뷸라">Nebula</span>
         </h2>
-        <p>
+        <p data-en="Learn more about Nebula and its capabilities." data-ko="Nebula의 기능에 대해 더 알아보세요.">
           Learn more about Nebula and its capabilities.
         </p>
       </div>
@@ -148,29 +163,28 @@
         </div>
         <div class="col-md-6">
           <div class="detail-box">
-            <h3>
+            <h3 data-en="What is Nebula?" data-ko="Nebula는 무엇인가요?">
               What is Nebula?
             </h3>
-            <p>
-              Nebula is a powerful tool designed to enhance the convenience and accessibility of Cosmo/Discord users. It offers various features to streamline user interactions and improve their overall experience on Discord.
+            <p data-en="Nebula is a powerful tool designed to enhance the convenience and accessibility of Cosmo/Discord users." data-ko="Nebula는 Cosmo 및 Discord 사용자의 편리함 그리고, Cosmo, Discord의 상호 접근성을 향상시키기 위해 설계된 강력한 Discord App입니다.">
+              Nebula is a powerful tool designed to enhance the convenience and accessibility of Cosmo/Discord users.
             </p>
-            <p>
+            <p data-en="Key Features:" data-ko="주요 기능:">
               Key Features:
               <ul>
-                <li><strong>/profile:</strong> Show your cosmo profile includes seasonal objekt stats, como per month and also your recent vote history.</li>
-                <li><strong>/collection:</strong> Show your objekt list; You can also search up specific objekt you are looking for.</li>
-                <li><strong>/activity:</strong> Show your trade history.</li>
-                <li><strong>/objekt_info:</strong> Search up specific objekt.</li>
-                <li><strong>/connect:</strong> Connect your cosmo account with Nebula so that you don't need to put your cosmo ID everytime using command; non-login option</li>
-                <li><strong>/disconnect:</strong> Disconnect your cosmo account with Nebula.</li>
-                
-                <li><strong>/nebula:</strong> Customize your nebula profile.</li>
+                <li><strong data-en="/profile:" data-ko="/profile:">/profile:</strong> <span data-en="Show your Cosmo profile includes seasonal objekt stats, como per month and also your recent vote history." data-ko="시즌별 Objekt 통계, 월별 코스모 휙득량 및 최근 투표 기록을 포함한 Cosmo 프로필을 보여줍니다.">Show your Cosmo profile includes seasonal objekt stats, como per month and also your recent vote history.</span></li>
+                <li><strong data-en="/collection:" data-ko="/collection:">/collection:</strong> <span data-en="Show your objekt list; You can also search up specific objekt you are looking for." data-ko="Objekt 목록을 표시하고, 원하는 특정 Objekt를 검색할 수 있습니다.">Show your objekt list; You can also search up specific objekt you are looking for.</span></li>
+                <li><strong data-en="/activity:" data-ko="/activity:">/activity:</strong> <span data-en="Show your trade history." data-ko="트레이드 내역을 표시합니다.">Show your trade history.</span></li>
+                <li><strong data-en="/objekt_info:" data-ko="/objekt_info:">/objekt_info:</strong> <span data-en="Search up specific objekt." data-ko="특정 Objekt를 검색합니다.">Search up specific objekt.</span></li>
+                <li><strong data-en="/connect:" data-ko="/connect:">/connect:</strong> <span data-en="Connect your Cosmo account with Nebula so that you don't need to put your Cosmo ID every time using command." data-ko="Cosmo 계정을 Nebula와 연결하여 명령어를 사용할 때마다 코스모 ID를 입력할 필요가 없게 합니다.">Connect your Cosmo account with Nebula so that you don't need to put your Cosmo ID every time using command.</span></li>
+                <li><strong data-en="/disconnect:" data-ko="/disconnect:">/disconnect:</strong> <span data-en="Disconnect your Cosmo account with Nebula." data-ko="Cosmo 계정을 Nebula와 연결 해제합니다.">Disconnect your Cosmo account with Nebula.</span></li>
+                <li><strong data-en="/nebula:" data-ko="/nebula:">/nebula:</strong> <span data-en="Customize your Nebula profile." data-ko="네뷸라 프로필을 꾸밉니다.">Customize your Nebula profile.</span></li>
               </ul>
             </p>
-            <p>
-              Nebula aims to provide a seamless and enhanced user experience for all Cosmo/Discord enthusiasts by integrating essential functionalities and making them accessible through a user-friendly features.
+            <p data-en="Nebula aims to provide a seamless and enhanced user experience for all Cosmo/Discord enthusiasts by integrating essential functionalities and making them accessible through user-friendly features." data-ko="Nebula는 Cosmo 와 Discord를 연결하고 유저 친화적인 기능을 통해 모든 Cosmo/Discord 이용자에게 원활하고 향상된 경험을 제공하는 것을 목표로 합니다.">
+              Nebula aims to provide a seamless and enhanced user experience for all Cosmo/Discord enthusiasts by integrating essential functionalities and making them accessible through user-friendly features.
             </p>
-            <a href="https://discord.gg/S2PQHSvkTw" target="_blank">
+            <a href="https://discord.gg/S2PQHSvkTw" target="_blank" data-en="Join us!" data-ko="지원서버 참여">
               Join us!
             </a>
           </div>
@@ -184,21 +198,17 @@
       <div class="row">
         <div class="col-md-6 col-lg-3 info_col">
           <div class="info_contact">
-            <h4>
+            <h4 data-en="Contact" data-ko="연락처">
               Contact
             </h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  Discord: @hj_sss or @aborr
-                </span>
+                <span data-en="Discord: @hj_sss or @aborr" data-ko="Discord: @hj_sss or @aborr">Discord: @hj_sss or @aborr</span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  cs@objektify.xyz
-                </span>
+                <span data-en="cs@objektify.xyz" data-ko="cs@objektify.xyz">cs@objektify.xyz</span>
               </a>
             </div>
           </div>
@@ -207,21 +217,161 @@
     </div>
   </section>
 
-  <section class="footer_section">
+  <footer class="footer_section">
     <div class="container">
-      <a href="index.html">
-        <img src="images/icon.png" alt="Nebula Logo">
-        <span>Nebula</span>
-      </a>
+        <div class="footer_content">
+            <div class="language-switch">
+                <button class="language-btn active" onclick="switchLanguage('english')">
+                    English
+                </button>
+                <button class="language-btn" onclick="switchLanguage('korean')">
+                    한국어
+                </button>
+            </div>
+    
+            <div class="nebula">
+                <a href="https://discord.com/oauth2/authorize?client_id=1245754129092186123" target="_blank">
+                    <img src="images/icon.png" alt="Nebula Logo">
+                    <span>Nebula</span>
+                </a>
+            </div>
+        </div>
     </div>
-  </section>
+</footer>
 
-  <script>
-    function toggleMenu() {
-      var element = document.getElementById("navbarSupportedContent");
-      element.classList.toggle("collapse");
+<style>
+    .footer_section {
+        background-color: #071a35;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
     }
-  </script>
+    
+    .footer_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .language-switch {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .language-btn {
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 20px;
+        background-color: #2d2d2d;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .language-btn .flag {
+        margin-right: 8px;
+        font-size: 16px;
+    }
+
+    .language-btn.active {
+        background-color: #8746FF;
+    }
+
+    .language-btn:hover {
+        opacity: 0.9;
+    }
+
+    .nebula {
+        display: flex;
+        align-items: center;
+    }
+
+    .nebula img {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .nebula span {
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+    }
+
+    .nebula a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+</style>
+
+<script>
+  function switchLanguage(language) {
+      const elements = document.querySelectorAll('[data-en], [data-ko]');
+
+      elements.forEach(element => {
+          const enText = element.getAttribute('data-en');
+          const koText = element.getAttribute('data-ko');
+          
+          if (language === 'english') {
+              element.innerText = enText;
+          } else if (language === 'korean') {
+              element.innerText = koText;
+          }
+      });
+
+      const buttons = document.querySelectorAll('.language-btn');
+      buttons.forEach(button => {
+          button.classList.remove('active');
+      });
+      
+      const selectedButton = document.querySelector(`.language-btn:nth-child(${language === 'english' ? 1 : 2})`);
+      selectedButton.classList.add('active');
+  }
+</script>
+
+<script>
+  window.onload = function() {
+      const savedLanguage = localStorage.getItem('language');
+      if (savedLanguage) {
+          switchLanguage(savedLanguage); 
+      } else {
+          switchLanguage('english'); 
+      }
+  };
+
+  function switchLanguage(language) {
+      const elements = document.querySelectorAll('[data-en], [data-ko]');
+      
+      elements.forEach(element => {
+          const enText = element.getAttribute('data-en');
+          const koText = element.getAttribute('data-ko');
+          
+          if (language === 'english') {
+              element.innerText = enText;
+          } else if (language === 'korean') {
+              element.innerText = koText;
+          }
+      });
+
+      const buttons = document.querySelectorAll('.language-btn');
+      buttons.forEach(button => {
+          button.classList.remove('active');
+      });
+
+      const selectedButton = document.querySelector(`.language-btn:nth-child(${language === 'english' ? 1 : 2})`);
+      selectedButton.classList.add('active');
+
+      localStorage.setItem('language', language);
+  }
+</script>
 
 </body>
 
